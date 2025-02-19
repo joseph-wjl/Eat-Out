@@ -14,9 +14,11 @@ searchField.addEventListener("keydown", function (e) {
 })
 
 results.addEventListener("click", function (e) {
-    if (e.target.closest(".result-card")) {
-        console.log("clicked")
-        fetchMenuItems()
+    const resultCard = e.target.closest(".result-card");
+    if (resultCard) {
+        const restaurantName = resultCard.getAttribute("data-restaurant");
+        console.log("Clicked on restaurant:", restaurantName);
+        fetchMenuItems(restaurantName);
     }
 })
 
@@ -30,6 +32,7 @@ function fetchResults() {
             // if (matchingRestaurants.length === 0) {
             displayResults(matchingRestaurants[0])
         })
+        .catch(error => console.error("Error fetching data:", error))
     searchField.value = ""
 }
 
@@ -50,8 +53,23 @@ function fetchMenuItems(restaurantName) {
         .then(res => res.json())
         .then(data => {
             const menuItems = data.filter(item => item.restaurant === restaurantName)
-            console.log(menuItems)
+            displayMenuItems(menuItems)
         })
+}
+
+function displayMenuItems(menuItems) {
+    results.innerHTML = ""
+    menuItems.forEach(item => {
+        const menuItemHTML = `
+            <div class="menu-items">
+                <h3>${item.food}</h3>
+                <p>${item.calories}</p>
+                <p>${item.protein}</p>
+                <p>${item.carbs}</p>
+                <p>${item.fat}</p>
+            </div>`
+        results.innerHTML += menuItemHTML
+    })
 }
 
 // Mobile Nav

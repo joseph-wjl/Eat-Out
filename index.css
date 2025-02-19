@@ -47,27 +47,48 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px grey solid;
     margin: none;
     padding-right: 1rem;
     padding-left: 1rem;
     border-radius: 20px;
     margin-bottom: -2rem;
-    background-color: white;
+    background-color: #f6f6f6;
 }
 
+/* Nav */
+
 nav {
-    display: none;
+    display: block;
+    height: 100vh;
+    background-color: #121212;
+    color: #f6f6f6;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    font-size: 2.5rem;
 }
 
 nav.show {
-    display: block;
+    transform: translateX(0);
 }
 
 li {
     list-style-type: none;
-    text-decoration: underline;
+    text-decoration: none;
+    margin: 2rem;
+    font-weight: 600;
 }
+
+li:hover {
+    cursor: pointer;
+    color: rgb(20, 175, 20);
+    transition: 0.3s;
+}
+
+/* Main */
 
 main {
     padding-top: 2rem;
