@@ -154,6 +154,41 @@ main>h2>span {
     color: #19cb1f;
 }
 
+/* Logo Carousel */
+.logo-carousel {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    /* Adjust height as needed */
+    background-color: #f5f5f5;
+    /* Background color for the carousel */
+}
+
+.logo-carousel .logo-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    /* Animation for sliding */
+}
+
+.logo-carousel img {
+    height: 80px;
+    /* Adjust height as needed */
+    margin: 0 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 /* Search Section */
 
 #search-section {
@@ -196,8 +231,6 @@ main>h2>span {
     border-radius: 7px;
     padding: 0.5rem;
     border: none;
-    /* background-color: #0e0e0e; */
-    /* color: antiquewhite; */
     font-weight: bold;
     width: 7rem;
     height: 3rem;
@@ -205,7 +238,7 @@ main>h2>span {
 }
 
 .search-field:hover {
-    background-color: #e7e7e7;
+    background-color: #e0e0e0;
 }
 
 .search-btn:hover {
@@ -263,6 +296,7 @@ main>h2>span {
     cursor: pointer;
     transform: translateY(-5%);
     transition: 0.4s;
+    color: #272727;
 }
 
 footer {

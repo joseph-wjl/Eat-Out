@@ -4,6 +4,40 @@ const results = document.getElementById("results")
 const resultCard = document.getElementById("result-card")
 const hamburger = document.getElementById("hamburger")
 const nav = document.getElementById("nav")
+const logoCarousel = document.getElementById("logo-carousel");
+
+let restaurantData = []
+
+fetch("data.json")
+    .then(res => res.json())
+    .then(data => {
+        restaurantData = data;
+        displayLogos(data);
+    })
+    .catch(error => console.error("Error fetching data:", error));
+
+function displayLogos(data) {
+    logoCarousel.innerHTML = "";
+    const logoTrack = document.createElement("div");
+    logoTrack.className = "logo-track";
+
+    data.forEach(item => {
+        const logoImg = document.createElement("img");
+        logoImg.src = item.logo;
+        logoImg.alt = item.restaurant;
+        logoTrack.appendChild(logoImg);
+    });
+
+    // Duplicate the logos to create a continuous loop
+    data.forEach(item => {
+        const logoImg = document.createElement("img");
+        logoImg.src = item.logo;
+        logoImg.alt = item.restaurant;
+        logoTrack.appendChild(logoImg);
+    });
+
+    logoCarousel.appendChild(logoTrack);
+}
 
 searchBtn.addEventListener("click", fetchResults)
 
