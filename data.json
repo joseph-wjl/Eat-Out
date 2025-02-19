@@ -1,0 +1,66 @@
+[
+    {
+        "restaurant": "McDonalds",
+        "food": "Big Mac",
+        "calories": 500,
+        "protein": 10,
+        "fat": 20,
+        "carbs": 40
+    },
+    {
+        "restaurant": "McDonalds",
+        "food": "Cheeseburger",
+        "calories": 300,
+        "protein": 15,
+        "fat": 10,
+        "carbs": 30
+    },
+    {
+        "restaurant": "McDonalds",
+        "food": "Fries",
+        "calories": 400,
+        "protein": 5,
+        "fat": 20,
+        "carbs": 50
+    },
+    {
+        "restaurant": "McDonalds",
+        "food": "Coke",
+        "calories": 200,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 50
+    },
+    {
+        "restaurant": "Burger King",
+        "food": "Whopper",
+        "calories": 800,
+        "protein": 20,
+        "fat": 30,
+        "carbs": 60
+    },
+    {
+        "restaurant": "Burger King",
+        "food": "Cheeseburger",
+        "calories": 400,
+        "protein": 15,
+        "fat": 10,
+        "carbs": 30
+    },
+    {
+        "restaurant": "Burger King",
+        "food": "Fries",
+        "calories": 500,
+        "protein": 5,
+        "fat": 20,
+        "carbs": 50
+    },
+    {
+        "restaurant": "Burger King",
+        "food": "Coke",
+        "calories": 200,
+        "protein": 0,
+        "fat": 0,
+        "carbs": 50
+    }
+]

@@ -12,15 +12,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9c9267d74.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="root"></div>
     <header>
         <h1 class="title">EAT OUT</h1>
+        <i class="fa-solid fa-bars"></i>
         <modal class="mobile-modal">
             <nav>
-                <ul>
+                <ul class="nav-items">
                     <li>Explore</li>
                     <li>xxx</li>
                     <li>xxx</li>
@@ -31,10 +33,11 @@
     </header>
     <main>
         <h2>Find a restaurant</h2>
-        <input type="text" placeholder="Enter restaurant name" class="search-field">
-        <button class="search-btn">Search</button>
+        <input type="text" placeholder="Enter restaurant name" class="search-field" id="search-field">
+        <button class="search-btn" id="search-btn">Search</button>
     </main>
-    <script src="data.js" async defer></script>
+    <section id="results"></section>
+    <script src="index.js"></script>
 </body>
 
 </html>
