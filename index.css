@@ -86,6 +86,17 @@ main {
     transition: 0.5s;
 }
 
+/* Results */
+
+.result-card {
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-logo {
+    width: 5rem;
+}
+
 /* Desktop */
 
 @media(min-width: 900px) {

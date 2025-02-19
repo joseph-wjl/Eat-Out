@@ -1,6 +1,8 @@
 [
     {
         "restaurant": "McDonalds",
+        "logo": "logos/mcdonalds.png",
+        "logoalt": "McDonalds Logo",
         "food": "Big Mac",
         "calories": 500,
         "protein": 10,
@@ -9,6 +11,7 @@
     },
     {
         "restaurant": "McDonalds",
+        "logo": "logos/mcdonalds.png",
         "food": "Cheeseburger",
         "calories": 300,
         "protein": 15,
@@ -17,6 +20,7 @@
     },
     {
         "restaurant": "McDonalds",
+        "logo": "logos/mcdonalds.png",
         "food": "Fries",
         "calories": 400,
         "protein": 5,
@@ -25,6 +29,7 @@
     },
     {
         "restaurant": "McDonalds",
+        "logo": "logos/mcdonalds.png",
         "food": "Coke",
         "calories": 200,
         "protein": 0,
@@ -33,6 +38,7 @@
     },
     {
         "restaurant": "Burger King",
+        "logo": "logos/burger-king.jpg",
         "food": "Whopper",
         "calories": 800,
         "protein": 20,

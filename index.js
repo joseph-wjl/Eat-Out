@@ -12,18 +12,17 @@ function fetchResults() {
             const matchingRestaurants = data.filter(item =>
                 item.restaurant && item.restaurant.toLowerCase().includes(query))
             console.log(matchingRestaurants)
-            displayResults()
+            displayResults(matchingRestaurants[0])
         })
     searchField.value = ""
 }
 
-function displayResults(matchingRestaurants) {
+function displayResults(item) {
     results.innerHTML = ""
-    matchingRestaurants.forEach(item => {
-        results.innerHTML +=
-            `<div class="card">
+    results.innerHTML +=
+        `<div class="result-card">
+            <img src="${item.logo}" alt="${item.logoalt}" class="restaurant-logo" />
             <h3>${item.restaurant}</h3>
-            </div>
-            `
-    })
+        </div>
+         `
 }
