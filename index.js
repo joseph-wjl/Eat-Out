@@ -63,10 +63,10 @@ function displayMenuItems(menuItems) {
         const menuItemHTML = `
             <div class="menu-items">
                 <h3>${item.food}</h3>
-                <p>${item.calories}</p>
-                <p>${item.protein}</p>
-                <p>${item.carbs}</p>
-                <p>${item.fat}</p>
+                <p>Calories: ${item.calories}</p>
+                <p>Protein: ${item.protein}</p>
+                <p>Carbs: ${item.carbs}</p>
+                <p>Fat: ${item.fat}</p>
             </div>`
         results.innerHTML += menuItemHTML
     })
