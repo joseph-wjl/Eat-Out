@@ -1,5 +1,31 @@
 [
     {
+        "restaurant": "Starbucks",
+        "logo": "logos/starbucks.png",
+        "food": "Frappuccino",
+        "calories": 400,
+        "protein": 5,
+        "fat": 20,
+        "carbs": 50
+    },
+    {
+        "restaurant": "Starbucks",
+        "food": "Cake Pop",
+        "calories": 200,
+        "protein": 0,
+        "fat": 10,
+        "carbs": 20
+    },
+    {
+        "restaurant": "Subway",
+        "logo": "logos/subway.png",
+        "food": "Sub",
+        "calories": 400,
+        "protein": 20,
+        "fat": 10,
+        "carbs": 50
+    },
+    {
         "restaurant": "McDonalds",
         "logo": "logos/mcdonalds.png",
         "logoalt": "McDonalds Logo",
@@ -70,37 +96,13 @@
         "carbs": 50
     },
     {
-        "restaurant": "Starbucks",
-        "logo": "logos/starbucks.png",
-        "food": "Latte",
-        "calories": 200,
-        "protein": 5,
-        "fat": 10,
-        "carbs": 20
-    },
-    {
-        "restaurant": "Starbucks",
-        "food": "Mocha",
-        "calories": 300,
-        "protein": 5,
-        "fat": 15,
-        "carbs": 30
-    },
-    {
-        "restaurant": "Starbucks",
-        "food": "Frappuccino",
-        "calories": 400,
-        "protein": 5,
-        "fat": 20,
-        "carbs": 50
-    },
-    {
-        "restaurant": "Starbucks",
-        "food": "Cake Pop",
-        "calories": 200,
-        "protein": 0,
-        "fat": 10,
-        "carbs": 20
+        "restaurant": "KFC",
+        "logo": "logos/kfc.png",
+        "food": "Fried Chicken",
+        "calories": 800,
+        "protein": 20,
+        "fat": 30,
+        "carbs": 60
     },
     {
         "restaurant": "Fairwood 大快活",
