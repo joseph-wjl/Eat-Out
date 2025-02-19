@@ -159,12 +159,13 @@ main>h2>span {
 #search-section {
     background-color: #0f0f0f;
     border-radius: 35px 35px 0 0;
-    height: 20rem;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: -2rem;
+    padding-bottom: 2rem;
 }
 
 #search-section>h2 {
@@ -247,11 +248,15 @@ main>h2>span {
 
 .socials {
     font-size: 2rem;
-    margin: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    margin-top: -2.1rem;
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 0.7rem;
+    border-radius: 40px;
 }
 
 .socials>i:hover {
