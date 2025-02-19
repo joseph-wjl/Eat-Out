@@ -125,5 +125,15 @@
         "restaurant": "Cafe de Coral 大家樂",
         "logo": "logos/cafe-de-coral.jpg",
         "food": "Baked Pork Chop Rice"
+    },
+    {
+        "restaurant": "Milksha",
+        "logo": "logos/milksha.jpg",
+        "food": "Bubble Tea"
+    },
+    {
+        "restaurant": "Hana-Musubi",
+        "logo": "logos/hana-musubi.png",
+        "food": "Onigiri"
     }
 ]
