@@ -71,26 +71,30 @@ main {
 }
 
 main>h2 {
-    text-shadow: 2px 2px 5px #ffffff;
+    color: rgb(245, 245, 245);
 }
 
 .search-field {
     border-radius: 30px;
     border: none;
-    padding: 0.5rem;
+    padding: 1.1rem;
     margin-right: 1rem;
     width: 15rem;
     height: 2rem;
     margin-bottom: 0.5rem;
-    background-color: #f1dfc7;
+    background-color: #f5f5f5;
+}
+
+.search-field:hover {
+    background-color: #e8e8e8;
 }
 
 .search-btn {
-    background-color: white;
+    background-color: #f4f4f4;
     border-radius: 20px;
     padding: 0.5rem;
     border: none;
-    background-color: #135a02;
+    background-color: #151515;
     color: antiquewhite;
     font-weight: bold;
     width: 5rem;
@@ -99,7 +103,8 @@ main>h2 {
 
 .search-btn:hover {
     cursor: pointer;
-    background-color: #007b08;
+    background-color: #ffffff;
+    color: black;
     transition: 0.5s;
 }
 

@@ -4,6 +4,7 @@ const results = document.getElementById("results")
 const resultCard = document.getElementById("result-card")
 
 searchBtn.addEventListener("click", fetchResults)
+
 searchField.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
         fetchResults()
