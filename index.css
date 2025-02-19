@@ -92,7 +92,7 @@ main>h2 {
 }
 
 .search-field {
-    border-radius: 30px;
+    border-radius: 7px;
     border: none;
     padding: 1.1rem;
     width: 20rem;
@@ -108,10 +108,10 @@ main>h2 {
 
 .search-btn {
     background-color: #f4f4f4;
-    border-radius: 30px;
+    border-radius: 7px;
     padding: 0.5rem;
     border: none;
-    background-color: #151515;
+    background-color: #0e0e0e;
     color: antiquewhite;
     font-weight: bold;
     width: 7rem;
