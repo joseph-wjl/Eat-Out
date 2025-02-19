@@ -69,6 +69,7 @@ nav {
     transition: transform 0.3s ease-in-out;
     transform: translateX(-100%);
     font-size: 2.5rem;
+
 }
 
 nav.show {
@@ -80,6 +81,7 @@ li {
     text-decoration: none;
     margin: 2rem;
     font-weight: 600;
+    margin-left: 0.5rem;
 }
 
 li:hover {
