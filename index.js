@@ -2,6 +2,8 @@ const searchField = document.getElementById("search-field")
 const searchBtn = document.getElementById("search-btn")
 const results = document.getElementById("results")
 const resultCard = document.getElementById("result-card")
+const hamburger = document.getElementById("hamburger")
+const nav = document.getElementById("nav")
 
 searchBtn.addEventListener("click", fetchResults)
 
@@ -20,6 +22,7 @@ function fetchResults() {
         .then(data => {
             const matchingRestaurants = data.filter(item =>
                 item.restaurant && item.restaurant.toLowerCase().includes(query))
+            // if (matchingRestaurants.length === 0) {
             displayResults(matchingRestaurants[0])
         })
     searchField.value = ""
@@ -43,3 +46,9 @@ function fetchMenuItems() {
 
         })
 }
+
+// Mobile nav
+
+hamburger.addEventListener("click", function () {
+    nav.classList.toggle("show")
+})

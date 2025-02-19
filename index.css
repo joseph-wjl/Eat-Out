@@ -19,7 +19,7 @@ body {
     font-weight: bold;
     font-size: 3rem;
     text-decoration: underline;
-    text-underline-offset: 5px;
+    text-underline-offset: 15px;
 }
 
 /* .title::after {
@@ -31,6 +31,10 @@ body {
     bottom: 10px;
     left: 5px;
 } */
+
+.title>span {
+    font-weight: lighter;
+}
 
 .title:hover,
 .fa-solid:hover {
@@ -49,6 +53,10 @@ header {
 
 nav {
     display: none;
+}
+
+nav.show {
+    display: block;
 }
 
 li {
@@ -72,6 +80,12 @@ main {
 
 main>h2 {
     color: rgb(245, 245, 245);
+}
+
+#search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .search-field {

@@ -18,11 +18,11 @@
 <body>
     <div id="root"></div>
     <header>
-        <h1 class="title">EAT OUT</h1>
+        <h1 class="title">EAT <span>OUT</span></h1>
         <i class="fa-solid fa-bars" id="hamburger"></i>
     </header>
     <modal class="mobile-modal">
-        <nav>
+        <nav id="nav">
             <ul class="nav-items">
                 <li>Explore Restaurants</li>
                 <li>xxx</li>
@@ -33,8 +33,10 @@
     </modal>
     <main>
         <h2>Find a restaurant</h2>
-        <input type="text" placeholder="Enter restaurant name" class="search-field" id="search-field">
-        <button class="search-btn" id="search-btn">Search</button>
+        <form id="search-form">
+            <input type="text" placeholder="Enter restaurant name" class="search-field" id="search-field" required>
+            <button for="search-field" type="submit" class="search-btn" id="search-btn">Search</button>
+        </form>
     </main>
     <section id="results"></section>
     <script src="index.js"></script>
