@@ -32,6 +32,11 @@ body {
     left: 5px;
 } */
 
+.title:hover,
+.fa-solid:hover {
+    cursor: pointer;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -98,7 +103,7 @@ main>h2 {
     transition: 0.5s;
 }
 
-/* Results */
+/* Result Card */
 
 .result-card {
     display: flex;
@@ -113,6 +118,11 @@ main>h2 {
 .restaurant-logo {
     width: 6rem;
     padding-right: 1rem;
+}
+
+.result-card>h3:hover,
+.restaurant-logo:hover {
+    cursor: pointer;
 }
 
 /* Desktop */
