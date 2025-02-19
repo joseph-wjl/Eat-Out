@@ -101,5 +101,9 @@
         "protein": 0,
         "fat": 10,
         "carbs": 20
+    },
+    {
+        "restaurant": "Fairwood 大快活",
+        "logo": "logos/fairwood.png"
     }
 ]
