@@ -13,7 +13,12 @@ searchField.addEventListener("keydown", function (e) {
     }
 })
 
-resultCard.addEventListener("click", fetchMenuItems)
+results.addEventListener("click", function (e) {
+    if (e.target.closest(".result-card")) {
+        console.log("clicked")
+        fetchMenuItems()
+    }
+})
 
 function fetchResults() {
     const query = searchField.value.toLowerCase()
@@ -40,11 +45,12 @@ function displayResults(item) {
     results.scrollIntoView({ behavior: "smooth" })
 }
 
-function fetchMenuItems() {
+function fetchMenuItems(restaurantName) {
     fetch("data.json")
         .then(res => res.json())
         .then(data => {
-
+            const menuItems = data.filter(item => item.restaurant === restaurantName)
+            console.log(menuItems)
         })
 }
 
