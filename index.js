@@ -36,6 +36,7 @@ function displayResults(item) {
             <h3 class="card-restaurant">${item.restaurant}</h3>
         </div>
          `
+    results.classList.add("scroll-smooth")
     results.scrollIntoView({ behavior: "smooth" })
 }
 
