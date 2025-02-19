@@ -9,6 +9,15 @@
         "carbs": 50
     },
     {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Muffin",
+        "calories": 300,
+        "protein": 5,
+        "fat": 10,
+        "carbs": 40
+    },
+    {
         "restaurant": "Starbucks",
         "food": "Cake Pop",
         "calories": 200,
@@ -94,6 +103,10 @@
         "protein": 0,
         "fat": 0,
         "carbs": 50
+    },
+    {
+        "restaurant": "Five Guys",
+        "logo": "logos/five-guys.png"
     },
     {
         "restaurant": "KFC",
