@@ -47,7 +47,7 @@ function fetchMenuItems() {
         })
 }
 
-// Mobile nav
+// Mobile Nav
 
 hamburger.addEventListener("click", function () {
     nav.classList.toggle("show")
