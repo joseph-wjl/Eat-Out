@@ -8,6 +8,7 @@ const logoCarousel = document.getElementById("logo-carousel");
 
 let restaurantData = []
 
+// Fetch the data and store it for filtering
 fetch("data.json")
     .then(res => res.json())
     .then(data => {
@@ -21,16 +22,23 @@ function displayLogos(data) {
     const logoTrack = document.createElement("div");
     logoTrack.className = "logo-track";
 
+    // Use a Set to ensure unique restaurant logos
+    const uniqueRestaurants = new Set();
+
     data.forEach(item => {
-        const logoImg = document.createElement("img");
-        logoImg.src = item.logo;
-        logoImg.alt = item.restaurant;
-        logoTrack.appendChild(logoImg);
+        if (!uniqueRestaurants.has(item.restaurant)) {
+            uniqueRestaurants.add(item.restaurant);
+            const logoImg = document.createElement("img");
+            logoImg.src = item.logo;
+            logoImg.alt = item.restaurant;
+            logoTrack.appendChild(logoImg);
+        }
     });
 
     // Duplicate the logos to create a continuous loop
-    data.forEach(item => {
+    uniqueRestaurants.forEach(restaurant => {
         const logoImg = document.createElement("img");
+        const item = data.find(item => item.restaurant === restaurant);
         logoImg.src = item.logo;
         logoImg.alt = item.restaurant;
         logoTrack.appendChild(logoImg);
