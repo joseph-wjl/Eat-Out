@@ -74,7 +74,7 @@ main {
     display: flex;
     justify-content: center;
     background-color: grey;
-    height: 25em;
+    height: 27rem;
     margin: none;
     display: flex;
     flex-direction: column;
@@ -99,8 +99,8 @@ main>h2>span {
 
 #search-section {
     background-color: #0f0f0f;
-    border-radius: 40px 40px 0 0;
-    height: 25rem;
+    border-radius: 35px 35px 0 0;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,6 +110,7 @@ main>h2>span {
 
 #search-section>h2 {
     color: #fafafa;
+    font-size: 2.1rem;
 }
 
 #search-form {
@@ -130,7 +131,7 @@ main>h2>span {
 }
 
 .search-field:hover {
-    background-color: #e8e8e8;
+    background-color: #e7e7e7;
 }
 
 .search-btn {
@@ -148,7 +149,7 @@ main>h2>span {
 
 .search-btn:hover {
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: #d5d5d5;
     color: black;
     transition: 0.5s;
 }
