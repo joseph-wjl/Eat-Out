@@ -107,5 +107,10 @@
     {
         "restaurant": "Fairwood 大快活",
         "logo": "logos/fairwood.png"
+    },
+    {
+        "restaurant": "Cafe de Coral 大家樂",
+        "logo": "logos/cafe-de-coral.jpg",
+        "food": "Baked Pork Chop Rice"
     }
 ]
