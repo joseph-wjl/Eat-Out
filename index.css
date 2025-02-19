@@ -126,6 +126,12 @@ li:hover {
     transition: 0.3s;
 }
 
+#language {
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+}
+
 /* Main */
 
 main {
