@@ -135,5 +135,9 @@
         "restaurant": "Hana-Musubi",
         "logo": "logos/hana-musubi.png",
         "food": "Onigiri"
+    },
+    {
+        "restaurant": "Seven Eleven",
+        "logo": "logos/7-eleven.png"
     }
 ]
