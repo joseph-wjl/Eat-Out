@@ -254,6 +254,12 @@ main>h2>span {
     gap: 0.7rem;
 }
 
+.socials>i:hover {
+    cursor: pointer;
+    transform: translateY(-5%);
+    transition: 0.4s;
+}
+
 footer {
     text-align: center;
     font-size: 0.8rem;
