@@ -289,6 +289,12 @@ main>h2>span {
     cursor: pointer;
 }
 
+/* Menu items card */
+
+.menu-items-card {
+    padding-left: 3rem;
+}
+
 /* Socials */
 
 .socials {

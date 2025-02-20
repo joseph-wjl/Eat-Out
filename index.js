@@ -5,6 +5,7 @@ const resultCard = document.getElementById("result-card")
 const hamburger = document.getElementById("hamburger")
 const nav = document.getElementById("nav")
 const logoCarousel = document.getElementById("logo-carousel");
+const itemsSection = document.getElementById("items-section");
 
 let restaurantData = []
 
@@ -62,6 +63,7 @@ results.addEventListener("click", function (e) {
         console.log("Clicked on restaurant:", restaurantName);
         fetchMenuItems(restaurantName);
     }
+    console.log(e.target)
 })
 
 function fetchResults() {
@@ -78,12 +80,12 @@ function fetchResults() {
     searchField.value = ""
 }
 
-function displayResults(item) {
+function displayResults(restaurant) {
     results.innerHTML = ""
     results.innerHTML +=
-        `<div class="result-card" id="result-card">
-            <img src="${item.logo}" alt="${item.logoalt}" class="restaurant-logo" />
-            <h3 class="card-restaurant">${item.restaurant}</h3>
+        `<div class="result-card" id="result-card" data-restaurant="${restaurant.restaurant}">
+            <img src="${restaurant.logo}" alt="${restaurant.logoalt}" class="restaurant-logo" />
+            <h3 class="card-restaurant">${restaurant.restaurant}</h3>
         </div>
          `
     results.classList.add("scroll-smooth")
@@ -96,21 +98,24 @@ function fetchMenuItems(restaurantName) {
         .then(data => {
             const menuItems = data.filter(item => item.restaurant === restaurantName)
             displayMenuItems(menuItems)
+            console.log(menuItems)
         })
 }
 
 function displayMenuItems(menuItems) {
-    results.innerHTML = ""
+    console.log("logged")
+    itemsSection.innerHTML = ""
     menuItems.forEach(item => {
+        console.log(menuItems)
         const menuItemHTML = `
-            <div class="menu-items">
+            <div class="menu-items-card">
                 <h3>${item.food}</h3>
                 <p>Calories: ${item.calories}</p>
                 <p>Protein: ${item.protein}</p>
                 <p>Carbs: ${item.carbs}</p>
                 <p>Fat: ${item.fat}</p>
             </div>`
-        results.innerHTML += menuItemHTML
+        itemsSection.innerHTML += menuItemHTML
     })
 }
 
