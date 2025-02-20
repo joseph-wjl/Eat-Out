@@ -124,8 +124,8 @@ li {
 li:hover,
 #language:hover {
     cursor: pointer;
-    color: rgb(20, 175, 20);
-    transition: 0.3s;
+    color: #19cb1f;
+    transition: 0.5s;
 }
 
 #language {
@@ -270,7 +270,7 @@ main>h2>span {
 .result-card {
     display: flex;
     align-items: center;
-    padding-left: 4rem;
+    padding-left: 4.5rem;
     padding-top: 2rem;
     padding-bottom: 4rem;
     font-size: 1.2rem;
