@@ -297,14 +297,31 @@ main>h2>span {
 
 .food:hover {
     cursor: pointer;
+    text-decoration: underline;
+    transition: 1s;
 }
 
-.food-details {
+/* .food-details {
     display: none;
+    padding-left: 2rem;
 }
 
 .food-details.show {
     display: block;
+} */
+
+.food-details {
+    display: none;
+    padding-left: 2rem;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.food-details.show {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /* Socials */
