@@ -270,7 +270,7 @@ main>h2>span {
 .result-card {
     display: flex;
     align-items: center;
-    padding-left: 3rem;
+    padding-left: 5.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-size: 1.2rem;
@@ -281,7 +281,7 @@ main>h2>span {
 
 .restaurant-logo {
     width: 6rem;
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
 .result-card>h3:hover,
