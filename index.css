@@ -106,6 +106,7 @@ nav {
     transform: translateX(-100%);
     font-size: 1.7rem;
     z-index: 1000;
+    padding-top: 2rem;
 }
 
 nav.show {
@@ -120,7 +121,8 @@ li {
     margin-left: 0.5rem;
 }
 
-li:hover {
+li:hover,
+#language:hover {
     cursor: pointer;
     color: rgb(20, 175, 20);
     transition: 0.3s;
@@ -128,7 +130,8 @@ li:hover {
 
 #language {
     font-size: 1.7rem;
-    margin-top: 10rem;
+    position: absolute;
+    bottom: 4rem;
     margin-left: 0.5rem;
 }
 
@@ -177,14 +180,14 @@ main>h2>span {
 
 .logo-carousel .logo-track {
     display: flex;
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
     /* Animation for sliding */
 }
 
 .logo-carousel img {
     height: 80px;
     /* Adjust height as needed */
-    margin: 0 20px;
+    margin: 0 40px;
     /* Increase margin to separate logos more */
 }
 
