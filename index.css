@@ -295,6 +295,18 @@ main>h2>span {
     padding-left: 3rem;
 }
 
+.food:hover {
+    cursor: pointer;
+}
+
+.food-details {
+    display: none;
+}
+
+.food-details.show {
+    display: block;
+}
+
 /* Socials */
 
 .socials {

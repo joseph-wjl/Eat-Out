@@ -109,13 +109,22 @@ function displayMenuItems(menuItems) {
         console.log(menuItems)
         const menuItemHTML = `
             <div class="menu-items-card">
-                <h3>${item.food}</h3>
-                <p>Calories: ${item.calories}</p>
-                <p>Protein: ${item.protein}</p>
-                <p>Carbs: ${item.carbs}</p>
-                <p>Fat: ${item.fat}</p>
+                <h3 class="food">${item.food}</h3>
+                <div class="food-details">
+                    <p>Calories: ${item.calories}</p>
+                    <p>Protein: ${item.protein}</p>
+                    <p>Carbs: ${item.carbs}</p>
+                    <p>Fat: ${item.fat}</p>
+                </div>
             </div>`
         itemsSection.innerHTML += menuItemHTML
+        // Add event listeners to toggle food details
+        document.querySelectorAll('.food').forEach(foodItem => {
+            foodItem.addEventListener('click', function () {
+                const foodDetails = this.nextElementSibling;
+                foodDetails.classList.toggle('show');
+            });
+        });
     })
 }
 
