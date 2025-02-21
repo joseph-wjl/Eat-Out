@@ -9,50 +9,13 @@ const itemsSection = document.getElementById("items-section");
 
 let restaurantData = []
 
-// Fetch the data and store it for filtering
-fetch("data.json")
-    .then(res => res.json())
-    .then(data => {
-        restaurantData = data;
-        displayLogos(data);
-    })
-    .catch(error => console.error("Error fetching data:", error));
-
-function displayLogos(data) {
-    logoCarousel.innerHTML = "";
-    const logoTrack = document.createElement("div");
-    logoTrack.className = "logo-track";
-
-    // Use a Set to ensure unique restaurant logos
-    const uniqueRestaurants = new Set();
-
-    data.forEach(item => {
-        if (!uniqueRestaurants.has(item.restaurant)) {
-            uniqueRestaurants.add(item.restaurant);
-            const logoImg = document.createElement("img");
-            logoImg.src = item.logo;
-            logoImg.alt = item.restaurant;
-            logoTrack.appendChild(logoImg);
-        }
-    });
-
-    // Duplicate the logos to create a continuous loop
-    uniqueRestaurants.forEach(restaurant => {
-        const logoImg = document.createElement("img");
-        const item = data.find(item => item.restaurant === restaurant);
-        logoImg.src = item.logo;
-        logoImg.alt = item.restaurant;
-        logoTrack.appendChild(logoImg);
-    });
-
-    logoCarousel.appendChild(logoTrack);
-}
+// Event listeners
 
 searchBtn.addEventListener("click", fetchResults)
 
 searchField.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
-        fetchResults()
+        fetchResults
     }
 })
 
@@ -78,6 +41,7 @@ function fetchResults() {
         })
         .catch(error => console.error("Error fetching data:", error))
     searchField.value = ""
+    results.innerHTML = ""
 }
 
 function displayResults(restaurant) {
@@ -133,3 +97,44 @@ hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("active")
     nav.classList.toggle("show")
 })
+
+// Logo carousel
+
+// Fetch the data and store it for filtering
+fetch("data.json")
+    .then(res => res.json())
+    .then(data => {
+        restaurantData = data;
+        displayLogos(data);
+    })
+    .catch(error => console.error("Error fetching data:", error));
+
+function displayLogos(data) {
+    logoCarousel.innerHTML = "";
+    const logoTrack = document.createElement("div");
+    logoTrack.className = "logo-track";
+
+    // Use a Set to ensure unique restaurant logos
+    const uniqueRestaurants = new Set();
+
+    data.forEach(item => {
+        if (!uniqueRestaurants.has(item.restaurant)) {
+            uniqueRestaurants.add(item.restaurant);
+            const logoImg = document.createElement("img");
+            logoImg.src = item.logo;
+            logoImg.alt = item.restaurant;
+            logoTrack.appendChild(logoImg);
+        }
+    });
+
+    // Duplicate the logos to create a continuous loop
+    uniqueRestaurants.forEach(restaurant => {
+        const logoImg = document.createElement("img");
+        const item = data.find(item => item.restaurant === restaurant);
+        logoImg.src = item.logo;
+        logoImg.alt = item.restaurant;
+        logoTrack.appendChild(logoImg);
+    });
+
+    logoCarousel.appendChild(logoTrack);
+}
