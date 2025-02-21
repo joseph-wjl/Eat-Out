@@ -11,11 +11,17 @@ let restaurantData = []
 
 // Event listeners
 
-searchBtn.addEventListener("click", fetchResults)
+searchBtn.addEventListener("click", function (e) {
+    e.preventDefault()
+    fetchResults()
+    searchField.blur()
+})
 
 searchField.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
-        fetchResults
+        e.preventDefault()
+        fetchResults()
+        searchField.blur()
     }
 })
 
