@@ -81,10 +81,10 @@ function displayMenuItems(menuItems) {
             <div class="menu-items-card">
                 <h3 class="food">${item.food}</h3>
                 <div class="food-details">
-                    <p>Calories: ${item.calories}</p>
-                    <p>Protein: ${item.protein}</p>
-                    <p>Carbs: ${item.carbs}</p>
-                    <p>Fat: ${item.fat}</p>
+                    <p>Calories: ${item.calories}kcal</p>
+                    <p>Protein: ${item.protein}g</p>
+                    <p>Carbs: ${item.carbs}g</p>
+                    <p>Fat: ${item.fat}g</p>
                 </div>
             </div>`
         itemsSection.innerHTML += menuItemHTML
