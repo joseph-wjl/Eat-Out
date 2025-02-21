@@ -29,20 +29,92 @@
     {
         "restaurant": "Pret A Manger",
         "logo": "logos/pret-a-manger.jpg",
-        "food": "Muffin",
-        "calories": 300,
-        "protein": 5,
-        "fat": 10,
-        "carbs": 40
+        "food": "Avocado & Egg Breakfast Baguette",
+        "calories": 358,
+        "protein": 12.5,
+        "fat": 17.2,
+        "carbs": 38.3
     },
     {
         "restaurant": "Pret A Manger",
         "logo": "logos/pret-a-manger.jpg",
-        "food": "Sandwich",
-        "calories": 400,
-        "protein": 10,
-        "fat": 10,
-        "carbs": 40
+        "food": "Chicken & Vegetable Breakfast Pasta",
+        "calories": 164.1,
+        "protein": 11,
+        "fat": 5.7,
+        "carbs": 17.2
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Crispy Bacon & Egg Whole Wheat Brioche",
+        "calories": 272.7,
+        "protein": 9.9,
+        "fat": 17.1,
+        "carbs": 19.8
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Egg & Tomatoes Whole Wheat Brioche",
+        "calories": 231,
+        "protein": 7,
+        "fat": 13.4,
+        "carbs": 20.6
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Ham & Cheese Breakfast Baguette",
+        "calories": 297.6,
+        "protein": 15.1,
+        "fat": 9.2,
+        "carbs": 38.6
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Ham & Cheese Hot Croissant",
+        "calories": 314.6,
+        "protein": 13.8,
+        "fat": 19.8,
+        "carbs": 20.3
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Ham & Greve Croissant",
+        "calories": 344.5,
+        "protein": 15.3,
+        "fat": 20.5,
+        "carbs": 24.7
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Ham & Greve Whole Wheat Brioche",
+        "calories": 231.4,
+        "protein": 11.2,
+        "fat": 12.2,
+        "carbs": 19.2
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Hot Bacon & Egg Roll",
+        "calories": 408.4,
+        "protein": 19.4,
+        "fat": 20.8,
+        "carbs": 35.9
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Hot Smoked Salmon Brunch Roll",
+        "calories": 383,
+        "protein": 18.7,
+        "fat": 18.6,
+        "carbs": 35.2
     },
     {
         "restaurant": "Starbucks",
@@ -62,41 +134,301 @@
         "carbs": 50
     },
     {
-        "restaurant": "McDonalds",
+        "restaurant": "McDonald's",
         "logo": "logos/mcdonalds.png",
-        "logoalt": "McDonalds Logo",
-        "food": "Big Mac",
-        "calories": 500,
+        "food": "凱撒沙律 Caesar Salad",
+        "calories": 129.5,
+        "protein": 7.4,
+        "fat": 6.7,
+        "carbs": 9.9
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "烤雞凱撒沙律 Grilled Chicken Caesar Salad",
+        "calories": 249,
+        "protein": 24.2,
+        "fat": 11.4,
+        "carbs": 12.4
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "精選早晨套餐 Deluxe Breakfast",
+        "calories": 592.5,
+        "protein": 23.3,
+        "fat": 38.5,
+        "carbs": 38.2
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "熱香餅 (3件) Hotcakes (3 pcs)",
+        "calories": 272.3,
+        "protein": 7.6,
+        "fat": 4.7,
+        "carbs": 49.9
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "熱香餅 (2件) Hotcakes (2 pcs)",
+        "calories": 181.5,
+        "protein": 5.1,
+        "fat": 3.1,
+        "carbs": 33.3
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "板燒雞腿扭扭粉 (雞湯原味) Grilled Chicken Twisty Pasta (Chicken flavor)",
+        "calories": 333.2,
+        "protein": 26,
+        "fat": 6.4,
+        "carbs": 42.9
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "Mini雜菜蛋扭扭粉 Mixed Veggies Egg Mini\nTwisty Pasta",
+        "calories": 162.7,
         "protein": 10,
-        "fat": 20,
+        "fat": 5.1,
+        "carbs": 19.2
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "麥芝蛋飽 Egg & Cheese Burger",
+        "calories": 299.2,
+        "protein": 14.1,
+        "fat": 13.6,
+        "carbs": 30.1
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "煙肉蛋漢堡® Egg McMuffin®",
+        "calories": 263.4,
+        "protein": 17.9,
+        "fat": 10.2,
+        "carbs": 25
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "火腿扒芝士漢堡 Ham N’ Cheese Burger",
+        "calories": 343.2,
+        "protein": 12.9,
+        "fat": 20.4,
+        "carbs": 27
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "巨無霸® Big Mac®",
+        "calories": 494.6,
+        "protein": 25.6,
+        "fat": 24.6,
+        "carbs": 42.7
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "芝士漢堡飽 Cheeseburger",
+        "calories": 292.8,
+        "protein": 15.5,
+        "fat": 12.4,
+        "carbs": 29.8
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "雙層芝士孖堡™ Double Cheeseburger™",
+        "calories": 431.7,
+        "protein": 25.6,
+        "fat": 22.9,
+        "carbs": 30.8
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "魚柳飽 Filet-O-Fish™",
+        "calories": 296.4,
+        "protein": 15,
+        "fat": 14.4,
+        "carbs": 26.7
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "漢堡飽 Hamburger",
+        "calories": 244.5,
+        "protein": 12.6,
+        "fat": 8.5,
+        "carbs": 29.4
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "麥香雞® McChicken®",
+        "calories": 381.3,
+        "protein": 14.6,
+        "fat": 18.1,
         "carbs": 40
     },
     {
-        "restaurant": "McDonalds",
+        "restaurant": "McDonald's",
         "logo": "logos/mcdonalds.png",
-        "food": "Cheeseburger",
-        "calories": 300,
-        "protein": 15,
-        "fat": 10,
-        "carbs": 30
+        "food": "脆辣雞腿飽 McSpicy® Chicken Filet",
+        "calories": 459.5,
+        "protein": 18.5,
+        "fat": 24.3,
+        "carbs": 41.7
     },
     {
-        "restaurant": "McDonalds",
+        "restaurant": "McDonald's",
         "logo": "logos/mcdonalds.png",
-        "food": "Fries",
-        "calories": 400,
-        "protein": 5,
-        "fat": 20,
-        "carbs": 50
+        "food": "板燒雞腿飽 GCB®",
+        "calories": 357,
+        "protein": 23,
+        "fat": 14.6,
+        "carbs": 33.4
     },
     {
-        "restaurant": "McDonalds",
+        "restaurant": "McDonald's",
         "logo": "logos/mcdonalds.png",
-        "food": "Coke",
-        "calories": 200,
-        "protein": 0,
+        "food": "豬柳漢堡™ Sausage McMuffin®",
+        "calories": 359.6,
+        "protein": 14.9,
+        "fat": 22.4,
+        "carbs": 24.6
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "豬柳蛋漢堡™ Sausage McMuffin® with Egg",
+        "calories": 423.6,
+        "protein": 20.7,
+        "fat": 26.8,
+        "carbs": 24.9
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "磨菇安格斯 Cheesy Champignon Angus Burger",
+        "calories": 642.3,
+        "protein": 36.2,
+        "fat": 38.7,
+        "carbs": 37.3
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "芝士安格斯 Angus Original",
+        "calories": 580.2,
+        "protein": 34.8,
+        "fat": 32.2,
+        "carbs": 37.8
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "粒粒粟米杯 Fresh Corn Cup",
+        "calories": 81.2,
+        "protein": 3.2,
+        "fat": 2,
+        "carbs": 12.6
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "粒粒粟米杯 (細) Fresh Corn Cup (S)",
+        "calories": 53.7,
+        "protein": 2.1,
+        "fat": 1.3,
+        "carbs": 8.4
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "脆薯餅 Hash Browns",
+        "calories": 136.7,
+        "protein": 1.3,
+        "fat": 9.1,
+        "carbs": 12.4
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "麥樂雞® (6件) Chicken McNuggets® (6 pcs)",
+        "calories": 315.1,
+        "protein": 18.3,
+        "fat": 21.5,
+        "carbs": 12.1
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "薯條 (中) Fries (M)",
+        "calories": 312.3,
+        "protein": 4.7,
+        "fat": 16.7,
+        "carbs": 35.8
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "薯條 (細) Fries (S)",
+        "calories": 116.8,
+        "protein": 3.4,
         "fat": 0,
-        "carbs": 50
+        "carbs": 25.8
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "脆香雞翼 (2件) McWings® (2 pcs)",
+        "calories": 241.1,
+        "protein": 14.6,
+        "fat": 16.7,
+        "carbs": 8.1
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "蘋果批 Apple Pie",
+        "calories": 228.5,
+        "protein": 2.3,
+        "fat": 13.3,
+        "carbs": 24.9
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "新地筒 Twist Cone",
+        "calories": 137.6,
+        "protein": 3.2,
+        "fat": 4.4,
+        "carbs": 21.3
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "朱古力新地 Hot Fudge Sundae",
+        "calories": 342.7,
+        "protein": 6.5,
+        "fat": 13.1,
+        "carbs": 49.7
+    },
+    {
+        "restaurant": "McDonald's",
+        "logo": "logos/mcdonalds.png",
+        "food": "藍莓高鈣低脂乳酪 Hi-Calcium Low Fat Blueberry Yoghurt",
+        "calories": 75,
+        "protein": 3.3,
+        "fat": 1,
+        "carbs": 13.2
     },
     {
         "restaurant": "Burger King",
