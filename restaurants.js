@@ -1,4 +1,5 @@
 const restaurantsCard = document.getElementById("restaurants-card")
+const restaurantLogo = document.getElementById("restaurant-logo")
 const hamburger = document.getElementById("hamburger")
 const nav = document.getElementById("nav")
 const navHome = document.getElementById("nav-home")
@@ -25,7 +26,7 @@ function displayRestaurants() {
             data.forEach(function (restaurant) {
                 restaurantsCard.innerHTML += `
                     <div>
-                        <img src="${restaurant.logo}" alt="${restaurant.restaurant}" class="restaurant-logos">
+                        <img src="${restaurant.logo}" alt="${restaurant.restaurant}" class="restaurant-logos" id="restaurant-logo">
                     <div>`
                 // if (data.restaurant.includes(restaurant.restaurant)) {
                 //     restaurantsCard.innerHTML = ""
@@ -40,3 +41,8 @@ function displayRestaurants() {
 }
 
 displayRestaurants()
+
+// Logo navigation
+// restaurantLogo.addEventListener("click", fucntion() {
+
+// })
