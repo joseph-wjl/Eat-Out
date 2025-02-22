@@ -24,9 +24,17 @@ function displayRestaurants() {
         .then(data => {
             data.forEach(function (restaurant) {
                 restaurantsCard.innerHTML += `
-            <div>
-                <img src="${restaurant.logo}" alt="${restaurant.restaurant}" class="restaurant-logos">
-            <div>`
+                    <div>
+                        <img src="${restaurant.logo}" alt="${restaurant.restaurant}" class="restaurant-logos">
+                    <div>`
+                // if (data.restaurant.includes(restaurant.restaurant)) {
+                //     restaurantsCard.innerHTML = ""
+                // } else {
+                //     restaurantsCard.innerHTML += `
+                //     <div>
+                //         <img src="${restaurant.logo}" alt="${restaurant.restaurant}" class="restaurant-logos">
+                //     <div>`
+                // }
             })
         })
 }
