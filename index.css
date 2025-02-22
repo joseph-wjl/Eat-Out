@@ -272,8 +272,13 @@ main>h2>span {
 
 /* Menu items card */
 
+#items-section {
+    margin-top: -2.5rem;
+}
+
 .menu-items-card {
     padding-left: 1rem;
+
 }
 
 .food:hover {
