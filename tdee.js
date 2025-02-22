@@ -3,6 +3,8 @@ const nav = document.getElementById("nav")
 const navHome = document.getElementById("nav-home")
 const returnHome = document.getElementById("return-home")
 const ageEl = document.getElementById("age")
+const weightEl = document.getElementById("weight")
+const heightEl = document.getElementById("height")
 const calculateBtn = document.getElementById("calculate-btn")
 
 hamburger.addEventListener("click", function () {
@@ -19,11 +21,12 @@ returnHome.addEventListener("click", function () {
 })
 
 calculateBtn.addEventListener("click", function () {
-    grabAge()
+    calculate()
 })
 
 // Calculate TDEE
 
-function grabAge() {
-    console.log(ageEl.value)
+function calculate() {
+    const tdee = ageEl.value + weightEl.value
+    console.log(tdee)
 }
