@@ -4,6 +4,7 @@ const results = document.getElementById("results")
 const resultCard = document.getElementById("result-card")
 const hamburger = document.getElementById("hamburger")
 const nav = document.getElementById("nav")
+const navTdee = document.getElementById("nav-tdee")
 const logoCarousel = document.getElementById("logo-carousel");
 const itemsSection = document.getElementById("items-section");
 
@@ -102,6 +103,10 @@ function displayMenuItems(menuItems) {
 hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("active")
     nav.classList.toggle("show")
+})
+
+navTdee.addEventListener("click", function () {
+    window.location.href = "tdee.html"
 })
 
 // Logo carousel
