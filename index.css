@@ -140,8 +140,8 @@ main>h2 {
     color: #f5f5f5;
     font-size: 2rem;
     margin-left: 1rem;
-    width: 25rem;
-    max-width: 30rem;
+    /* width: 25rem;
+    max-width: 30rem; */
 }
 
 main>h2>span {
