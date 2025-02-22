@@ -33,7 +33,8 @@
         "calories": 358,
         "protein": 12.5,
         "fat": 17.2,
-        "carbs": 38.3
+        "carbs": 38.3,
+        "category": "Morning Goods"
     },
     {
         "restaurant": "Pret A Manger",
@@ -42,7 +43,8 @@
         "calories": 164.1,
         "protein": 11,
         "fat": 5.7,
-        "carbs": 17.2
+        "carbs": 17.2,
+        "category": "Morning Goods"
     },
     {
         "restaurant": "Pret A Manger",
@@ -51,7 +53,8 @@
         "calories": 272.7,
         "protein": 9.9,
         "fat": 17.1,
-        "carbs": 19.8
+        "carbs": 19.8,
+        "category": "Morning Goods"
     },
     {
         "restaurant": "Pret A Manger",
@@ -60,7 +63,8 @@
         "calories": 231,
         "protein": 7,
         "fat": 13.4,
-        "carbs": 20.6
+        "carbs": 20.6,
+        "category": "Morning Goods"
     },
     {
         "restaurant": "Pret A Manger",
@@ -69,7 +73,8 @@
         "calories": 297.6,
         "protein": 15.1,
         "fat": 9.2,
-        "carbs": 38.6
+        "carbs": 38.6,
+        "category": "Morning Goods"
     },
     {
         "restaurant": "Pret A Manger",
@@ -78,7 +83,8 @@
         "calories": 314.6,
         "protein": 13.8,
         "fat": 19.8,
-        "carbs": 20.3
+        "carbs": 20.3,
+        "category": "Morning Goods"
     },
     {
         "restaurant": "Pret A Manger",
@@ -87,7 +93,8 @@
         "calories": 344.5,
         "protein": 15.3,
         "fat": 20.5,
-        "carbs": 24.7
+        "carbs": 24.7,
+        "category": "Morning Goods"
     },
     {
         "restaurant": "Pret A Manger",
@@ -96,7 +103,8 @@
         "calories": 231.4,
         "protein": 11.2,
         "fat": 12.2,
-        "carbs": 19.2
+        "carbs": 19.2,
+        "category": "Morning Goods"
     },
     {
         "restaurant": "Pret A Manger",
@@ -105,7 +113,8 @@
         "calories": 408.4,
         "protein": 19.4,
         "fat": 20.8,
-        "carbs": 35.9
+        "carbs": 35.9,
+        "category": "Morning Goods"
     },
     {
         "restaurant": "Pret A Manger",
@@ -114,7 +123,288 @@
         "calories": 383,
         "protein": 18.7,
         "fat": 18.6,
-        "carbs": 35.2
+        "carbs": 35.2,
+        "category": "Morning Goods"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Miso Congee with Mushroom & Dried Scallop",
+        "calories": 133.2,
+        "protein": 8.4,
+        "fat": 4.8,
+        "carbs": 14.1,
+        "category": "Morning Goods"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Mozzarella & Tomato Hot Croissant",
+        "calories": 375.5,
+        "protein": 13.1,
+        "fat": 25.1,
+        "carbs": 24.3,
+        "category": "Morning Goods"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Pret's Soy Porridge",
+        "calories": 222.1,
+        "protein": 12,
+        "fat": 8.1,
+        "carbs": 25.3,
+        "category": "Morning Goods"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Roasted Tomatoes & Egg Breakfast Baguette",
+        "calories": 383.5,
+        "protein": 12.4,
+        "fat": 18.3,
+        "carbs": 42.3,
+        "category": "Morning Goods"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Skipjack Tuna & Cucumber Whole Wheat Brioche",
+        "calories": 262,
+        "protein": 9.7,
+        "fat": 15.6,
+        "carbs": 20.7,
+        "category": "Morning Goods"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Smoked Salmon Whole Wheat Brioche",
+        "calories": 256.1,
+        "protein": 10.9,
+        "fat": 14.1,
+        "carbs": 21.4,
+        "category": "Morning Goods"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Chicken Avocado",
+        "calories": 275.4,
+        "protein": 10.7,
+        "fat": 17,
+        "carbs": 19.9,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Classic Super Club",
+        "calories": 266.1,
+        "protein": 13.7,
+        "fat": 14.1,
+        "carbs": 21.1,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Crayfish Rocket",
+        "calories": 178.1,
+        "protein": 7.8,
+        "fat": 7.3,
+        "carbs": 20.3,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Egg Mayo & Rocket",
+        "calories": 274,
+        "protein": 10.6,
+        "fat": 17.2,
+        "carbs": 19.2,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Kids Almond Butter & Berry",
+        "calories": 396.3,
+        "protein": 13.8,
+        "fat": 16.7,
+        "carbs": 47.7,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Kids Ham & Butter",
+        "calories": 284.3,
+        "protein": 16.5,
+        "fat": 7.5,
+        "carbs": 37.7,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Mediterranean Tuna",
+        "calories": 186.9,
+        "protein": 8.2,
+        "fat": 7.7,
+        "carbs": 21.2,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Mexican Falafel",
+        "calories": 222.1,
+        "protein": 6.1,
+        "fat": 10.1,
+        "carbs": 26.7,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "New Yorker",
+        "calories": 216.3,
+        "protein": 9.5,
+        "fat": 8.3,
+        "carbs": 25.9,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Pret's Famous BLT",
+        "calories": 237.8,
+        "protein": 9.3,
+        "fat": 13,
+        "carbs": 20.9,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Skipjack Tuna & Cucumber Whole Wheat Brioche",
+        "calories": 176.8,
+        "protein": 8,
+        "fat": 6.8,
+        "carbs": 20.9,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Smoked Salmon Whole Wheat Brioche",
+        "calories": 251.2,
+        "protein": 13.4,
+        "fat": 13.2,
+        "carbs": 19.7,
+        "category": "Sandwiches"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Jambon Beurre Baguette",
+        "calories": 438.7,
+        "protein": 22.6,
+        "fat": 13.1,
+        "carbs": 57.6,
+        "category": "Baguettes"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Posh Cheddar & Roasted Tomatoes Baguette",
+        "calories": 726.9,
+        "protein": 22.9,
+        "fat": 34.1,
+        "carbs": 82.1,
+        "category": "Baguettes"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Soup Baguette",
+        "calories": 153.9,
+        "protein": 5.5,
+        "fat": 0.7,
+        "carbs": 31.4,
+        "category": "Baguettes"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Chicken Mushroom Hot Wrap",
+        "calories": 472.4,
+        "protein": 26.3,
+        "fat": 22.4,
+        "carbs": 41.4,
+        "category": "Hot Food"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Chicken Tikka Masala Hot Rice Bowl",
+        "calories": 569.2,
+        "protein": 26.4,
+        "fat": 14.4,
+        "carbs": 83.5,
+        "category": "Hot Food"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Ham & British Cheddar Toastie",
+        "calories": 515.9,
+        "protein": 30.3,
+        "fat": 23.1,
+        "carbs": 46.7,
+        "category": "Hot Food"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Macaroni Cheese Kale & Cauli",
+        "calories": 642.1,
+        "protein": 27.3,
+        "fat": 34.1,
+        "carbs": 56.5,
+        "category": "Hot Food"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Macaroni Cheese Lasagne",
+        "calories": 621.8,
+        "protein": 28.2,
+        "fat": 35,
+        "carbs": 48.5,
+        "category": "Hot Food"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Pastrami & Onion Hot Croissant",
+        "calories": 337,
+        "protein": 14.3,
+        "fat": 19.8,
+        "carbs": 25.4,
+        "category": "Hot Food"
+    },
+    {
+        "restaurant": "Pret A Manger",
+        "logo": "logos/pret-a-manger.jpg",
+        "food": "Peking Duck Hot Wrap",
+        "calories": 400.1,
+        "protein": 15.4,
+        "fat": 15.7,
+        "carbs": 49.3,
+        "category": "Hot Food"
     },
     {
         "restaurant": "Starbucks",

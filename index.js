@@ -31,10 +31,8 @@ results.addEventListener("click", function (e) {
     const resultCard = e.target.closest(".result-card");
     if (resultCard) {
         const restaurantName = resultCard.getAttribute("data-restaurant");
-        console.log("Clicked on restaurant:", restaurantName);
         fetchMenuItems(restaurantName);
     }
-    console.log(e.target)
 })
 
 function fetchResults() {
@@ -70,15 +68,12 @@ function fetchMenuItems(restaurantName) {
         .then(data => {
             const menuItems = data.filter(item => item.restaurant === restaurantName)
             displayMenuItems(menuItems)
-            console.log(menuItems)
         })
 }
 
 function displayMenuItems(menuItems) {
-    console.log("logged")
     itemsSection.innerHTML = ""
     menuItems.forEach(item => {
-        console.log(menuItems)
         const menuItemHTML = `
             <div class="menu-items-card">
                 <h3 class="food">${item.food}</h3>
