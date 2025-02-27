@@ -23,19 +23,17 @@ function displayRestaurants() {
     fetch("data.json")
         .then(res => res.json())
         .then(data => {
+            const uniqueRestaurants = new Set()
             data.forEach(function (restaurant) {
-                restaurantsCard.innerHTML += `
-                    <div>
+                // Eliminate duplicates
+                if (!uniqueRestaurants.has(restaurant.restaurant)) {
+                    uniqueRestaurants.add(restaurant.restaurant)
+                    // 
+                    restaurantsCard.innerHTML += `
+                    <div class="restaurant-card">
                         <img src="${restaurant.logo}" alt="${restaurant.restaurant}" class="restaurant-logos" id="restaurant-logo">
                     <div>`
-                // if (data.restaurant.includes(restaurant.restaurant)) {
-                //     restaurantsCard.innerHTML = ""
-                // } else {
-                //     restaurantsCard.innerHTML += `
-                //     <div>
-                //         <img src="${restaurant.logo}" alt="${restaurant.restaurant}" class="restaurant-logos">
-                //     <div>`
-                // }
+                }
             })
         })
 }
