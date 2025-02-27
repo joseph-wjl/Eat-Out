@@ -1,4 +1,5 @@
 const searchField = document.getElementById("search-field")
+const suggestions = document.getElementById("suggestions")
 const searchBtn = document.getElementById("search-btn")
 const results = document.getElementById("results")
 const resultCard = document.getElementById("result-card")
@@ -34,6 +35,21 @@ results.addEventListener("click", function (e) {
         fetchMenuItems(restaurantName);
     }
 })
+
+function displaySuggestions(restaurants) {
+    suggestions.innerHTML = "";
+    restaurants.forEach(restaurant => {
+        const suggestionItem = document.createElement("div");
+        suggestionItem.className = "suggestion-item";
+        suggestionItem.textContent = restaurant.restaurant;
+        suggestionItem.addEventListener("click", function () {
+            searchField.value = restaurant.restaurant;
+            fetchResults();
+            suggestions.innerHTML = ""; // Clear suggestions
+        });
+        suggestions.appendChild(suggestionItem);
+    });
+}
 
 function fetchResults() {
     const query = searchField.value.toLowerCase()

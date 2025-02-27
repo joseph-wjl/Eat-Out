@@ -153,19 +153,19 @@ main>h2>span {
     background-color: #0f0f0f;
     color: white;
     border-radius: 35px 35px 0 0;
-    height: 35rem;
+    height: 45rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 3rem 2rem 3rem 2rem;
-    margin-top: -4.5rem;
-    border: 5px red sold;
+    margin-top: -4rem;
 }
 
 #tdee-section>h2 {
     color: #fafafa;
     font-size: 1.7rem;
+    margin-top: -1rem;
 }
 
 #tdee-form {

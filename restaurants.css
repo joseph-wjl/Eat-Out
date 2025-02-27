@@ -190,6 +190,7 @@ main>h2>span {
 
 #return-home {
     margin-top: 4rem;
+    text-decoration: underline;
 }
 
 #return-home:hover {
