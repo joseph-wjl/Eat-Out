@@ -42,8 +42,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     margin-bottom: 0.5rem;
 }
@@ -57,7 +57,7 @@ body {
 
 /* Animation for the Hamburger Icon */
 .hamburger.active .bar:nth-child(1) {
-    transform: translateY(13px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -65,7 +65,7 @@ body {
 }
 
 .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 /* Header */
