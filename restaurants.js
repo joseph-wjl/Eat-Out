@@ -44,3 +44,9 @@ displayRestaurants()
 // restaurantLogo.addEventListener("click", fucntion() {
 
 // })
+
+// Mobile Nav
+hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("active")
+    nav.classList.toggle("show")
+})

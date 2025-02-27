@@ -153,13 +153,14 @@ main>h2>span {
     background-color: #ffffff;
     color: #0c0c0c;
     border-radius: 35px 35px 0 0;
-    height: 35rem;
-    display: grid;
+    min-height: 35rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3rem 2rem 3rem 2rem;
     margin-top: -4.5rem;
     text-align: center;
+    overflow: hidden;
 }
 
 #restaurants-card {
@@ -167,9 +168,11 @@ main>h2>span {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 4rem;
-    max-width: 30rem;
     margin: auto;
     padding-top: 2.5rem;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
 }
 
 .restaurant-logos {
