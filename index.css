@@ -53,6 +53,7 @@ body {
     height: 4px;
     background-color: #000;
     transition: all 0.4s ease-in-out;
+    border-radius: 5px;
 }
 
 /* Animation for the Hamburger Icon */
