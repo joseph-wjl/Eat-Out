@@ -13,6 +13,13 @@ body {
 
 /* Title */
 
+#eatout-logo {
+    width: 13rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: -1rem;
+}
+
 .title {
     font-weight: bold;
     font-size: 3rem;
@@ -72,7 +79,8 @@ header {
     padding-left: 1rem;
     border-radius: 20px;
     margin-bottom: -1rem;
-    background-color: #f6f6f6;
+    /* background-color: #f6f6f6; */
+    background-color: white;
 }
 
 /* Nav */
