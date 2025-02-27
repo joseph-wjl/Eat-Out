@@ -167,7 +167,7 @@ main>h2>span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
     margin: auto;
     padding-top: 2.5rem;
     width: 100%;
@@ -186,6 +186,10 @@ main>h2>span {
 #tdee-section>h2 {
     color: #fafafa;
     font-size: 1.7rem;
+}
+
+#return-home {
+    margin-top: 4rem;
 }
 
 #return-home:hover {
