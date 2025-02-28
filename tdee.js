@@ -1,3 +1,4 @@
+const eatoutLogo = document.getElementById("eatout-logo")
 const hamburger = document.getElementById("hamburger")
 const nav = document.getElementById("nav")
 const navHome = document.getElementById("nav-home")
@@ -7,16 +8,19 @@ const weightEl = document.getElementById("weight")
 const heightEl = document.getElementById("height")
 const calculateBtn = document.getElementById("calculate-btn")
 
+
+// Navigation
 hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("active")
     nav.classList.toggle("show")
 })
-
 navHome.addEventListener("click", function () {
     window.location.href = "index.html"
 })
-
 returnHome.addEventListener("click", function () {
+    window.location.href = "index.html"
+})
+eatoutLogo.addEventListener("click", function () {
     window.location.href = "index.html"
 })
 

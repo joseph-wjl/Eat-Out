@@ -20,6 +20,10 @@ body {
     margin-left: -1rem;
 }
 
+#eatout-logo:hover {
+    cursor: pointer;
+}
+
 .title {
     font-weight: bold;
     font-size: 3rem;

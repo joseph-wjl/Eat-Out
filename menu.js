@@ -1,3 +1,9 @@
+const eatoutLogo = document.getElementById("eatout-logo")
+const hamburger = document.getElementById("hamburger")
+const nav = document.getElementById("nav")
+const navHome = document.getElementById("nav-home")
+const returnHome = document.getElementById("return-home")
+const navTdee = document.getElementById("nav-tdee")
 const menuSection = document.getElementById("menu-section")
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -41,3 +47,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+// Navigation
+navHome.addEventListener("click", function () {
+    window.location.href = "index.html"
+})
+returnHome.addEventListener("click", function () {
+    window.location.href = "index.html"
+})
+navTdee.addEventListener("click", function () {
+    window.location.href = "tdee.html"
+    console.log("nav")
+})
+eatoutLogo.addEventListener("click", function () {
+    window.location.href = "index.html"
+})
+
+// Mobile Nav
+hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("active")
+    nav.classList.toggle("show")
+})

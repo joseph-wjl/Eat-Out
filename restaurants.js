@@ -5,6 +5,7 @@ const nav = document.getElementById("nav")
 const navHome = document.getElementById("nav-home")
 const returnHome = document.getElementById("return-home")
 const navTdee = document.getElementById("nav-tdee")
+const eatoutLogo = document.getElementById("eatout-logo")
 
 // Navigation
 navHome.addEventListener("click", function () {
@@ -16,6 +17,9 @@ returnHome.addEventListener("click", function () {
 navTdee.addEventListener("click", function () {
     window.location.href = "tdee.html"
     console.log("nav")
+})
+eatoutLogo.addEventListener("click", function () {
+    window.location.href = "index.html"
 })
 
 // Display Restaurants

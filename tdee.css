@@ -20,19 +20,7 @@ body {
     margin-left: -1rem;
 }
 
-.title {
-    font-weight: bold;
-    font-size: 3rem;
-    text-decoration: underline;
-    margin-top: 1rem;
-}
-
-.title>span {
-    font-weight: lighter;
-}
-
-.title:hover,
-.fa-solid:hover {
+#eatout-logo:hover {
     cursor: pointer;
 }
 
