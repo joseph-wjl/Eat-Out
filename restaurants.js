@@ -39,6 +39,8 @@ function displayRestaurants() {
             document.querySelectorAll(".restaurant-logos").forEach(restaurant => {
                 restaurant.addEventListener("click", function (e) {
                     console.log(e.target.restaurant)
+                    const restaurantName = e.target.alt;
+                    window.location.href = `menu.html?restaurant=${encodeURIComponent(restaurantName)}`
                 })
             })
         })

@@ -7,8 +7,9 @@ const hamburger = document.getElementById("hamburger")
 const nav = document.getElementById("nav")
 const navRestaurants = document.getElementById("nav-restaurants")
 const navTdee = document.getElementById("nav-tdee")
-const logoCarousel = document.getElementById("logo-carousel");
-const itemsSection = document.getElementById("items-section");
+const logoCarousel = document.getElementById("logo-carousel")
+const itemsSection = document.getElementById("items-section")
+const exploreBtn = document.getElementById("explore")
 
 let restaurantData = []
 
@@ -34,6 +35,10 @@ results.addEventListener("click", function (e) {
         const restaurantName = resultCard.getAttribute("data-restaurant");
         fetchMenuItems(restaurantName);
     }
+})
+
+exploreBtn.addEventListener("click", function () {
+    window.location.href = "restaurants.html"
 })
 
 function displaySuggestions(restaurants) {
