@@ -35,15 +35,16 @@ function displayRestaurants() {
                     <div>`
                 }
             })
+            // Logo navigation
+            document.querySelectorAll(".restaurant-logos").forEach(restaurant => {
+                restaurant.addEventListener("click", function (e) {
+                    console.log(e.target.restaurant)
+                })
+            })
         })
 }
 
 displayRestaurants()
-
-// Logo navigation
-// restaurantLogo.addEventListener("click", fucntion() {
-
-// })
 
 // Mobile Nav
 hamburger.addEventListener("click", function () {
