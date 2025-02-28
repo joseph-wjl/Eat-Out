@@ -146,15 +146,22 @@ main>h2>span {
     color: #19cb1f;
 }
 
-/* Menu items card */
+/* Menu section */
 
-#items-section {
-    margin-top: -3rem;
+#menu-section {
+    border: 1px solid red;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.menu-items-card {
-    padding-left: 1rem;
+#return-home {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
 
+#return-home:hover {
+    cursor: pointer;
 }
 
 .food:hover {
