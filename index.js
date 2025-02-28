@@ -7,6 +7,7 @@ const hamburger = document.getElementById("hamburger")
 const nav = document.getElementById("nav")
 const navRestaurants = document.getElementById("nav-restaurants")
 const navTdee = document.getElementById("nav-tdee")
+const backToTopBtn = document.getElementById("back-to-top")
 const logoCarousel = document.getElementById("logo-carousel")
 const itemsSection = document.getElementById("items-section")
 const exploreBtn = document.getElementById("explore")
@@ -40,6 +41,24 @@ results.addEventListener("click", function (e) {
 exploreBtn.addEventListener("click", function () {
     window.location.href = "restaurants.html"
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 100) { // Adjust the value as needed
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    });
+    backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+
+// Functions
 
 function displaySuggestions(restaurants) {
     suggestions.innerHTML = "";
