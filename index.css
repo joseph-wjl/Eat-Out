@@ -459,7 +459,9 @@ footer {
     }
 
     #logo-carousel {
-        display: none;
+        position: absolute;
+        height: 5rem;
+        margin-top: 33rem;
     }
 
     #result-card {
