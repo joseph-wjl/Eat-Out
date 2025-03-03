@@ -66,11 +66,10 @@ header {
     margin: none;
     padding-right: 1rem;
     padding-left: 1rem;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-bottom: -1rem;
     /* background-color: #f6f6f6; */
     background-color: white;
-
 }
 
 #back-to-top {
@@ -396,8 +395,40 @@ footer {
     }
 
     nav {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: static;
+        transform: none;
+        background-color: white;
         color: black;
+        padding-right: 2rem;
+        height: 4rem;
+        font-size: 1.2rem;
+    }
+
+    #desktop-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        gap: 1.5rem;
+    }
+
+    nav li {
+        margin: 0 1rem;
+    }
+
+    #language {
+        display: none;
     }
 
     #desktop-section2 {
@@ -433,5 +464,9 @@ footer {
 
     #result-card {
         margin-top: 3rem;
+    }
+
+    .socials {
+        margin-top: 5rem;
     }
 }

@@ -44,7 +44,11 @@ exploreBtn.addEventListener("click", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 100) { // Adjust the value as needed
+        const scrollY = window.scrollY;
+        const maxScroll = document.body.scrollHeight - window.innerHeight;
+        const scrollFraction = Math.min(scrollY / maxScroll, 1);
+
+        if (scrollY > 100) { // Adjust the value as needed
             backToTopBtn.style.display = "block";
         } else {
             backToTopBtn.style.display = "none";

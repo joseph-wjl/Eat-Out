@@ -15,17 +15,16 @@
 </head>
 
 <body>
-    <div id="root"></div>
-    <header>
-        <!-- <h1 class="title">EAT <span>OUT</span></h1> -->
-        <img src="images/eatout.PNG" id="eatout-logo">
-        <div class="hamburger" id="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    </header>
-    <modal class="mobile-modal">
+    <div id="desktop-nav">
+        <div id="root"></div>
+        <header>
+            <img src="images/eatout.PNG" id="eatout-logo">
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </header>
         <nav id="nav">
             <ul class="nav-items">
                 <li id="nav-home">Home</li>
@@ -35,53 +34,55 @@
                 <i class="fa-solid fa-globe" id="language"></i>
             </ul>
         </nav>
-    </modal>
-    <main>
-        <h2>Fancy a meal out but wanted to stay on top of your <span>fitness goals</span>?</h2>
-    </main>
-
-    <section id="tdee-section">
-        <h2>Calculate Your TDEE</h2>
-        <form id="tdee-form">
-            <div class="form-group">
-                <label for="gender">Gender:</label>
-                <select id="activity" name="activity" required>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" placeholder="Enter your age" required>
-            </div>
-            <div class="form-group">
-                <label for="weight">Weight (kg):</label>
-                <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
-            </div>
-            <div class="form-group">
-                <label for="height">Height (cm):</label>
-                <input type="number" id="height" name="height" placeholder="Enter your height" required>
-            </div>
-            <div class="form-group">
-                <label for="activity">Activity Level:</label>
-                <select id="activity" name="activity" required>
-                    <option value="sedentary">Sedentary</option>
-                    <option value="light">Light Activity</option>
-                    <option value="moderate">Moderate Activity</option>
-                    <option value="active">Active</option>
-                    <option value="very-active">Very Active</option>
-                </select>
-            </div>
-            <button type="submit" class="calculate-btn" id="calculate-btn">Calculate</button>
-        </form>
-        <h4 id="return-home">Return to Home</h2>
-    </section>
-    <section id="results"></section>
-    <section id="items-section"></section>
+    </div>
+    <div id="desktop-section2">
+        <main id="main-section">
+            <h2>Fancy a meal out but wanted to stay on top of your <span>fitness goals</span>?</h2>
+        </main>
+        <section id="tdee-section">
+            <h2>Calculate Your TDEE</h2>
+            <form id="tdee-form">
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="activity" name="activity" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" placeholder="Enter your height" required>
+                </div>
+                <div class="form-group">
+                    <label for="activity">Activity Level:</label>
+                    <select id="activity" name="activity" required>
+                        <option value="sedentary">Sedentary</option>
+                        <option value="light">Light Activity</option>
+                        <option value="moderate">Moderate Activity</option>
+                        <option value="active">Active</option>
+                        <option value="very-active">Very Active</option>
+                    </select>
+                </div>
+                <button type="submit" class="calculate-btn" id="calculate-btn">Calculate</button>
+            </form>
+            <h4 id="return-home">Return to Home</h2>
+        </section>
+        <section id="results"></section>
+        <section id="items-section"></section>
+    </div>
     <section class="socials">
         <i class="fa-brands fa-instagram" id="instagram-logo"></i>
         <i class="fa-regular fa-envelope" id="email-logo"></i>
     </section>
+
     <footer>
         <p>@2025 EatOut</p>
     </footer>
