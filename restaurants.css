@@ -322,6 +322,12 @@ footer {
         display: none;
     }
 
+    #restaurants-card {
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
     #return-home {
         display: none;
     }
