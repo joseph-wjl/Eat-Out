@@ -356,6 +356,11 @@ footer {
         padding-left: 5rem;
     }
 
+    #restaurant-name {
+        text-align: center;
+        padding: 3rem;
+    }
+
     #menu-items {
         display: flex;
         flex-wrap: wrap;
