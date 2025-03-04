@@ -6,6 +6,7 @@ const navHome = document.getElementById("nav-home")
 const returnHome = document.getElementById("return-home")
 const navTdee = document.getElementById("nav-tdee")
 const eatoutLogo = document.getElementById("eatout-logo")
+const backToTopBtn = document.getElementById("back-to-top")
 
 // Navigation
 navHome.addEventListener("click", function () {
@@ -21,6 +22,26 @@ navTdee.addEventListener("click", function () {
 eatoutLogo.addEventListener("click", function () {
     window.location.href = "index.html"
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", function () {
+        const scrollY = window.scrollY;
+        const maxScroll = document.body.scrollHeight - window.innerHeight;
+        const scrollFraction = Math.min(scrollY / maxScroll, 1);
+
+        if (scrollY > 100) { // Adjust the value as needed
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    });
+    backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
 
 // Display Restaurants
 function displayRestaurants() {

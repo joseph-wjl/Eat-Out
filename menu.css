@@ -146,6 +146,10 @@ main>h2>span {
     color: #19cb1f;
 }
 
+#main-filler {
+    display: none;
+}
+
 /* Menu section */
 
 #menu-section {
@@ -314,12 +318,11 @@ footer {
     #desktop-section2 {
         display: flex;
         flex-direction: row;
-        height: 30rem;
     }
 
     #main-section {
         width: 100%;
-        height: 30rem;
+        height: 40rem;
         border-radius: 0;
     }
 
@@ -328,25 +331,42 @@ footer {
         font-size: 3rem;
     }
 
-    #search-section {
+    #main-filler {
+        display: block;
         width: 100%;
-        height: 30rem;
-        border-radius: 0;
+        height: 34rem;
+        padding-top: 8rem;
+        padding-bottom: -5rem;
+        background-color: black;
+        color: white;
     }
 
-    #search-section>h2 {
-        font-size: 2.2rem;
+    #main-filler>h2 {
+        text-align: center;
+        margin-top: 8rem;
+        font-size: 3rem;
     }
 
-    #logo-carousel {
+    #restaurants-section>h2 {
         display: none;
     }
 
-    #result-card {
-        margin-top: 3rem;
+    #menu-section {
+        margin-top: 15rem;
+        padding-left: 5rem;
+    }
+
+    #menu-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .menu-item {
+        width: 15rem;
     }
 
     .socials {
-        margin-top: 5rem;
+        margin-top: 0.5rem;
     }
 }

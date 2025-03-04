@@ -16,17 +16,15 @@
 
 <body>
     <div id="root"></div>
-
-    <header>
-        <!-- <h1 class="title">EAT <span>OUT</span></h1> -->
-        <img src="images/eatout.PNG" id="eatout-logo">
-        <div class="hamburger" id="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    </header>
-    <modal class="mobile-modal">
+    <div id="desktop-nav">
+        <header>
+            <img src="images/eatout.PNG" id="eatout-logo">
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </header>
         <nav id="nav">
             <ul class="nav-items">
                 <li id="nav-restaurants">Explore Restaurants</li>
@@ -36,17 +34,21 @@
                 <i class="fa-solid fa-globe" id="language"></i>
             </ul>
         </nav>
-    </modal>
+    </div>
     <div id="desktop-section2">
         <main id="main-section">
             <h2>Fancy a meal out but wanted to stay on top of your <span>fitness goals</span>?</h2>
         </main>
-        <section id="menu-section">
-            <h1 id="restaurant-name"></h1>
-            <div id="menu-items"></div>
-            <h4 id="return-home">Return to Home</h4>
-        </section>
+        <div id="main-filler">
+            <h2>Explore restaurants!</h2>
+        </div>
     </div>
+    <section id="menu-section">
+        <h1 id="restaurant-name"></h1>
+        <div id="menu-items"></div>
+        <h4 id="return-home">Return to Home</h4>
+    </section>
+
     <section class="socials">
         <i class="fa-brands fa-instagram" id="instagram-logo"></i>
         <i class="fa-regular fa-envelope" id="email-logo"></i>
