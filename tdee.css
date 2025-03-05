@@ -194,7 +194,8 @@ main>h2>span {
 }
 
 .form-group select {
-    height: 1rem;
+    height: auto;
+    padding: 0.5rem;
 }
 
 #calculate-btn {
