@@ -53,14 +53,14 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             backToTopBtn.style.display = "none";
         }
-    });
+    })
     backToTopBtn.addEventListener("click", function () {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
-        });
-    });
-});
+        })
+    })
+})
 
 // Functions
 

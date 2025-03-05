@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const tdee = bmr * activityFactor
-        tdeeResult.textContent = `Your TDEE is ${tdee.toFixed(2)} calories per day.`
+        tdeeResult.textContent = `Your TDEE is ${tdee.toFixed(2)} calories per day!`
         // console.log(`Your TDEE is ${tdee.toFixed(2)} calories per day.`)
     }
 })
