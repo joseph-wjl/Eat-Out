@@ -187,8 +187,8 @@ main>h2>span {
     border-radius: 7px;
     border: none;
     padding: 1.1rem;
-    width: 20rem;
-    height: 3rem;
+    width: 15rem;
+    height: 0.1rem;
     font-size: 16px;
     background-color: #f5f5f5;
 }
@@ -203,6 +203,7 @@ main>h2>span {
     width: 7rem;
     height: 3rem;
     font-size: 1rem;
+    margin: auto;
 }
 
 #calculate-btn:hover {
