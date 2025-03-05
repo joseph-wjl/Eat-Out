@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.getElementById("hamburger")
     const nav = document.getElementById("nav")
     const navHome = document.getElementById("nav-home")
+    const exploreBtn = document.getElementById("explore")
     const returnHome = document.getElementById("return-home")
     const ageEl = document.getElementById("age")
     const weightEl = document.getElementById("weight")
@@ -32,6 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
         calculateTDEE()
     });
 
+    exploreBtn.addEventListener("click", function () {
+        window.location.href = "restaurants.html"
+    })
+
+    // 
     function calculateTDEE() {
         const age = parseInt(ageEl.value)
         const weight = parseFloat(weightEl.value)

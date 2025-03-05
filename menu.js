@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search)
     const restaurantName = urlParams.get("restaurant")
@@ -29,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function displayMenuItems(menuItems) {
         const menuItemsContainer = document.getElementById("menu-items")
-        menuItemsContainer.innerHTML = "" // Clear previous content
+        menuItemsContainer.innerHTML = ""
 
         if (menuItems.length === 0) {
             menuItemsContainer.innerHTML = "<p>No menu items found</p>"
@@ -48,25 +46,38 @@ document.addEventListener("DOMContentLoaded", function () {
             menuItemsContainer.innerHTML += menuItemHTML
         })
     }
+
     // Navigation
-    navHome.addEventListener("click", function () {
-        window.location.href = "index.html"
-    })
-    returnHome.addEventListener("click", function () {
-        window.location.href = "index.html"
-        console.log("nav")
-    })
-    navTdee.addEventListener("click", function () {
-        window.location.href = "tdee.html"
-    })
-    eatoutLogo.addEventListener("click", function () {
-        window.location.href = "index.html"
-    })
+    if (navHome) {
+        navHome.addEventListener("click", function () {
+            window.location.href = "index.html"
+        })
+    }
+
+    if (returnHome) {
+        returnHome.addEventListener("click", function () {
+            window.location.href = "index.html"
+            console.log("nav")
+        })
+    }
+
+    if (navTdee) {
+        navTdee.addEventListener("click", function () {
+            window.location.href = "tdee.html"
+        })
+    }
+
+    if (eatoutLogo) {
+        eatoutLogo.addEventListener("click", function () {
+            window.location.href = "index.html"
+        })
+    }
 
     // Mobile Nav
-    hamburger.addEventListener("click", function () {
-        hamburger.classList.toggle("active")
-        nav.classList.toggle("show")
-    })
+    if (hamburger) {
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("active")
+            nav.classList.toggle("show")
+        })
+    }
 })
-
