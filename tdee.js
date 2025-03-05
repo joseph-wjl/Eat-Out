@@ -1,73 +1,80 @@
-const eatoutLogo = document.getElementById("eatout-logo")
-const hamburger = document.getElementById("hamburger")
-const nav = document.getElementById("nav")
-const navHome = document.getElementById("nav-home")
-const returnHome = document.getElementById("return-home")
-const ageEl = document.getElementById("age")
-const weightEl = document.getElementById("weight")
-const heightEl = document.getElementById("height")
-const calculateBtn = document.getElementById("calculate-btn")
+document.addEventListener("DOMContentLoaded", function () {
+    const eatoutLogo = document.getElementById("eatout-logo");
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("nav");
+    const navHome = document.getElementById("nav-home");
+    const returnHome = document.getElementById("return-home");
+    const ageEl = document.getElementById("age");
+    const weightEl = document.getElementById("weight");
+    const heightEl = document.getElementById("height");
+    const genderEl = document.getElementById("gender");
+    const exerciseEl = document.getElementById("exercise");
+    const calculateBtn = document.getElementById("calculate-btn");
+    const tdeeResult = document.getElementById("tdee-result");
 
+    // Navigation
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active");
+        nav.classList.toggle("show");
+    });
+    navHome.addEventListener("click", function () {
+        window.location.href = "index.html";
+    });
+    returnHome.addEventListener("click", function () {
+        window.location.href = "index.html";
+    });
+    eatoutLogo.addEventListener("click", function () {
+        window.location.href = "index.html";
+    });
 
-// Navigation
-hamburger.addEventListener("click", function () {
-    hamburger.classList.toggle("active")
-    nav.classList.toggle("show")
-})
-navHome.addEventListener("click", function () {
-    window.location.href = "index.html"
-})
-returnHome.addEventListener("click", function () {
-    window.location.href = "index.html"
-})
-eatoutLogo.addEventListener("click", function () {
-    window.location.href = "index.html"
-})
+    calculateBtn.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent form submission
+        calculateTDEE();
+    });
 
-calculateBtn.addEventListener("click", function () {
-    calculate()
-})
+    function calculateTDEE() {
+        const age = parseInt(ageEl.value);
+        const weight = parseFloat(weightEl.value);
+        const height = parseFloat(heightEl.value);
+        const gender = genderEl.value;
+        const exercise = exerciseEl.value;
 
-// Calculate TDEE
+        let bmr;
 
-function calculate() {
-    const tdee = ageEl.value + weightEl.value
-    console.log(tdee)
-}
+        if (gender === "male") {
+            bmr = 10 * weight + 6.25 * height - 5 * age + 5;
+        } else if (gender === "female") {
+            bmr = 10 * weight + 6.25 * height - 5 * age - 161;
+        } else {
+            console.error("Invalid gender");
+            return;
+        }
 
-// API
+        let activityFactor;
 
-const url = 'https://fitness-api.p.rapidapi.com/fitness';
-const options = {
-    method: 'GET',
-    headers: {
-        'x-rapidapi-key': '61fc0c5602msh7e836f3665b54dfp1fa97fjsn4bfa6e09ea7d',
-        'x-rapidapi-host': 'fitness-api.p.rapidapi.com',
-        'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    body: new URLSearchParams({
-        height: '190',
-        weight: '80',
-        age: '30',
-        gender: 'male',
-        exercise: 'little',
-        neck: '41',
-        hip: '100',
-        waist: '88',
-        goal: 'maintenance',
-        deficit: '500',
-        goalWeight: '85'
-    })
-};
+        switch (exercise) {
+            case "sedentary":
+                activityFactor = 1.2;
+                break;
+            case "light":
+                activityFactor = 1.375;
+                break;
+            case "moderate":
+                activityFactor = 1.55;
+                break;
+            case "active":
+                activityFactor = 1.725;
+                break;
+            case "very active":
+                activityFactor = 1.9;
+                break;
+            default:
+                console.error("Invalid exercise level");
+                return;
+        }
 
-async function fetchFitnessData() {
-    try {
-        const response = await fetch(url, options);
-        const result = await response.json();
-        console.log(result);
-    } catch (error) {
-        console.error(error);
+        const tdee = bmr * activityFactor;
+        tdeeResult.textContent = `Your TDEE is ${tdee.toFixed(2)} calories per day.`;
+        console.log(`Your TDEE is ${tdee.toFixed(2)} calories per day.`);
     }
-}
-
-fetchFitnessData();
+});

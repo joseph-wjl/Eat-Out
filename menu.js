@@ -1,14 +1,16 @@
-const eatoutLogo = document.getElementById("eatout-logo")
-const hamburger = document.getElementById("hamburger")
-const nav = document.getElementById("nav")
-const navHome = document.getElementById("nav-home")
-const returnHome = document.getElementById("return-home")
-const navTdee = document.getElementById("nav-tdee")
-const menuSection = document.getElementById("menu-section")
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search)
     const restaurantName = urlParams.get("restaurant")
+
+    const eatoutLogo = document.getElementById("eatout-logo")
+    const hamburger = document.getElementById("hamburger")
+    const nav = document.getElementById("nav")
+    const navHome = document.getElementById("nav-home")
+    const returnHome = document.getElementById("return-home")
+    const navTdee = document.getElementById("nav-tdee")
+    const menuSection = document.getElementById("menu-section")
 
     if (restaurantName) {
         document.getElementById("restaurant-name").textContent = restaurantName
@@ -46,25 +48,25 @@ document.addEventListener("DOMContentLoaded", function () {
             menuItemsContainer.innerHTML += menuItemHTML
         })
     }
+    // Navigation
+    navHome.addEventListener("click", function () {
+        window.location.href = "index.html"
+    })
+    returnHome.addEventListener("click", function () {
+        window.location.href = "index.html"
+        console.log("nav")
+    })
+    navTdee.addEventListener("click", function () {
+        window.location.href = "tdee.html"
+    })
+    eatoutLogo.addEventListener("click", function () {
+        window.location.href = "index.html"
+    })
+
+    // Mobile Nav
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active")
+        nav.classList.toggle("show")
+    })
 })
 
-// Navigation
-navHome.addEventListener("click", function () {
-    window.location.href = "index.html"
-})
-returnHome.addEventListener("click", function () {
-    window.location.href = "index.html"
-    console.log("nav")
-})
-navTdee.addEventListener("click", function () {
-    window.location.href = "tdee.html"
-})
-eatoutLogo.addEventListener("click", function () {
-    window.location.href = "index.html"
-})
-
-// Mobile Nav
-hamburger.addEventListener("click", function () {
-    hamburger.classList.toggle("active")
-    nav.classList.toggle("show")
-})
